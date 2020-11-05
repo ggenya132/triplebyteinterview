@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TripleByteClient"
+    }
+  },
+  "defaultProject": "TripleByteClient",
+  "cli": {
+    "analytics": false
+  }
 }

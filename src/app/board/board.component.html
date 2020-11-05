@@ -1,0 +1,12 @@
+<div class="board" *ngIf="board$ | async as board">
+  <app-column
+    *ngFor="let column of board.columns"
+    [cards]="column.cards"
+    [name]="column.name"
+    [color]="column.color"
+    [columnId]="column.id"
+    (cardAdded)="onCardAdd($event)"
+    (moveLeft)="onMoveLeft($event)"
+    (moveRight)="onMoveRight($event)"
+  ></app-column>
+</div>

@@ -1,0 +1,17 @@
+:host {
+  background-color: #efefef;
+}
+
+.column {
+  &__title {
+    // margin-bottom: 35px;
+    height: 35px;
+  }
+  &__cards {
+    &__card {
+      max-width: 5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
